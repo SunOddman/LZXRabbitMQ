@@ -28,4 +28,4 @@ RabbitMQ适配多模块的通信
 
 ## 使用注意
 - 如果需要关闭推送，调用 `[HDLMQTool destroyConnection]`
-- 在 `dealloc 中成对的调用 `+ (void)removeMQTarget:(nonnull id)obj inFunc:(NSString *)mqFunc`
+- 在 `dealloc` 中成对的调用 `+ (void)removeMQTarget:(nonnull id)obj inFunc:(NSString *)mqFunc`
