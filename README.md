@@ -10,13 +10,13 @@ RabbitMQ适配多模块的通信
 ## Useage
 
 ### 准备工作
-. 在 `MQConfig.h` 和 `MQConfig.m` 中修改 MQ服务器 的连接信息
-. 在 `MQNotificationConfig.h` 中增加需要响应 MQ消息 的类型名称
-. 在需要启动 MQ推送接收 功能的地方调用 `[HDLMQTool initConnection]`
+* 在 `MQConfig.h` 和 `MQConfig.m` 中修改 MQ服务器 的连接信息
+* 在 `MQNotificationConfig.h` 中增加需要响应 MQ消息 的类型名称
+* 在需要启动 MQ推送接收 功能的地方调用 `[HDLMQTool initConnection]`
 
 ### 使用
-. `#import "MQConfig.h"` 
-. 调用下列方法中的任意一个进行注册
+* `#import "MQConfig.h"` 
+* 调用下列方法中的任意一个进行注册
 ```
 + (void)registerMQFunc:(NSString *)mqFunc inPages:(FunctionOption)pages withMQCallback:(NS_NOESCAPE void(^)(HDLMQMessage *pushDict))block
 ```
